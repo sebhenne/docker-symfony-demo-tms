@@ -9,8 +9,12 @@ Lediglich [Docker](https://www.docker.com/community-edition) ist als Laufzeitumg
 ## Installation
 Nach dem Download müssen die Docker Umgebungen erstellt werden. Dazu im Verzeichnis `docker-symfony` die folgenden Befehle ausführen:
 ```bash
-$ docker-compose build
 $ docker-compose up -d
+```
+new build Progress trigger
+
+```
+$ docker-compose build
 ```
 
 Anschließend muss die symfony Konfiguration angepasst werden. Dazu muss die Umgebungskonfiguration ersstellt und angepasst werden:
@@ -35,7 +39,7 @@ Dann sollte die [http://localhost](Symfony Anwendung) laufen.
 ## Starten und Stoppen
 Stoppen kann man die Docker Container wie folgt:
 ```bash
-$ docker-compose stop
+$ docker-compose down
 ```
 Wieder starten dann mit:
 ```bash
